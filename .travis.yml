@@ -8,4 +8,4 @@ services:
     
 
 script:
-  - docker run amsingh21/docker-react npm run test -- --coverage
+  - docker run -e CI=true amsingh21/docker-react npm run test 
