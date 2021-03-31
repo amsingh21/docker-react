@@ -1,5 +1,6 @@
 sudo: required
-language: generic
+language: node_js
+  
 services:
   - docker
 
@@ -8,4 +9,4 @@ services:
     
 
 script:
-  - docker run -e CI=true amsingh21/docker-react npm  test 
+  - docker run -e CI=true amsingh21/docker-react npm test 
