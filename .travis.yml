@@ -1,12 +1,11 @@
-sudo: required
 language: node_js
   
 services:
   - docker
-
+ 
   before_install:
     - docker build -t amsingh21/docker-react -f Dockerfile.dev . 
     
-
+ 
 script:
   - docker run -e CI=true amsingh21/docker-react npm test 
